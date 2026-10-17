@@ -15,7 +15,7 @@ V8 temel alınarak Apple tarzı premium kurumsal site güncellendi.
 ## Yayın notları
 
 - `index.html` dosyasını açın veya klasörü statik hostinge koyun. Backend / veritabanı gerektirmez.
-- WhatsApp numarası `assets/whatsapp.js` dosyasında varsayılan olarak `905334919733` biçimindedir. **Canlıya çıkmadan önce işletmenin numarasını doğrulayın.**
+- WhatsApp numarası `assets/whatsapp.js` dosyasında varsayılan olarak `905374880884` biçimindedir. **Canlıya çıkmadan önce işletmenin numarasını doğrulayın.**
 - Web paketleri ₺3.000/8.000/12.000; bakım planları ₺750/1.500/3.000 aylık **örnek fiyatlardır**, kesin teklif değildir.
 - Üçüncü taraf platformların hesap/abonelik bedelleri hariçtir.
 - Ekinciler çalışması ve Atelier konsepti birbirinden ayrılmıştır.
