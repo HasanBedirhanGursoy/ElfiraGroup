@@ -1,8 +1,8 @@
-/* ELFIRA Group — WhatsApp click-to-chat. WhatsApp number: +90 533 491 97 33.
+/* ELFIRA Group — WhatsApp click-to-chat. WhatsApp number: +90 537 488 08 84.
    No server submission. Visitor must press Send inside WhatsApp. */
 (() => {
   'use strict';
-  const businessNumber='905334919733';
+  const businessNumber='905374880884';
   const packagePrices={start:3000,business:8000,premium:12000};
   const planLabels={start:'Start',business:'Business',premium:'Premium'};
   const extrasLabels={page:'Ek sayfa',copy:'İçerik metni desteği',language:'İkinci dil altyapısı',blog:'Blog altyapısı'};
