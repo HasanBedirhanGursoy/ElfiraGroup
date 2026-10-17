@@ -1,0 +1,77 @@
+/* ELFIRA Group V10 — floating dock navigation. Standalone, appended after V9 styles. */
+:root{--dock-surface:rgba(255,255,255,.82);--dock-border:rgba(66,56,75,.13);--dock-shadow:0 12px 40px rgba(26,22,43,.085),0 2px 12px rgba(26,22,43,.035);--dock-hover:rgba(137,96,188,.09)}
+body.dark{--dock-surface:rgba(29,29,35,.84);--dock-border:rgba(255,255,255,.16);--dock-shadow:0 18px 48px rgba(0,0,0,.33);--dock-hover:rgba(202,172,246,.12)}
+.site-header{
+  position:fixed!important;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);
+  z-index:80;width:min(1180px,calc(100% - 44px));margin:0;
+  background:transparent!important;border:0!important;box-shadow:none!important;
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+  transition:width .32s cubic-bezier(.2,.7,.2,1),top .32s ease;
+}
+.site-header .nav-container{
+  height:68px;min-width:0;width:100%;max-width:none;gap:22px;margin:0;padding:0 19px 0 25px;
+  border:1px solid var(--dock-border);border-radius:999px;
+  background:var(--dock-surface);
+  -webkit-backdrop-filter:blur(26px) saturate(160%);backdrop-filter:blur(26px) saturate(160%);
+  box-shadow:var(--dock-shadow);
+  transition:height .32s cubic-bezier(.2,.7,.2,1),padding .32s ease,background .22s,box-shadow .22s;
+}
+.site-header .brand{flex:none;min-width:114px}
+.site-header .brand strong{font-size:23px;letter-spacing:-.07em}
+.site-header .brand span{font-size:8px;margin-top:1px}
+.site-header .nav-desktop{display:flex;align-items:center;gap:3px;font-size:12px;min-width:0}
+.site-header .nav-desktop a{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;
+  border-radius:999px;min-height:36px;padding:0 12px;color:var(--muted);
+  font-weight:590;transition:background-color .2s,color .2s,transform .2s;
+}
+.site-header .nav-desktop a:hover{background:var(--dock-hover);color:var(--ink);transform:translateY(-1px)}
+.site-header .nav-desktop a.is-active{background:var(--dock-hover);color:var(--ink)}
+.site-header .nav-actions{gap:6px;flex:none;margin-left:auto}
+.site-header .icon-button{width:38px;height:38px}
+.site-header .icon-button svg{width:19px;height:19px}
+.site-header .wa-header{font-size:11px;padding:8px 12px;height:37px;background:color-mix(in srgb,var(--bg) 72%,transparent);border-color:var(--dock-border)}
+.site-header .wa-header:hover{background:var(--dock-hover)}
+.site-header .wa-header .whatsapp-symbol{width:17px;height:17px}
+.site-header .nav-cta{height:39px;padding:0 17px;font-size:11.5px;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.site-header.is-condensed{width:min(1060px,calc(100% - 44px));top:calc(10px + env(safe-area-inset-top,0px))}
+.site-header.is-condensed .nav-container{height:59px;padding-left:22px;padding-right:14px;box-shadow:0 14px 42px rgba(22,17,38,.14),0 3px 9px rgba(22,17,38,.035)}
+body.dark .site-header.is-condensed .nav-container{box-shadow:0 16px 46px rgba(0,0,0,.42)}
+.site-header .mobile-menu{
+  position:absolute;top:calc(100% + 9px);left:0;right:0;z-index:2;
+  padding:10px 23px 17px;max-height:calc(100dvh - 105px);overflow-y:auto;
+  background:var(--dock-surface);border:1px solid var(--dock-border);border-radius:25px;
+  -webkit-backdrop-filter:blur(26px) saturate(160%);backdrop-filter:blur(26px) saturate(160%);
+  box-shadow:var(--dock-shadow);
+}
+.site-header .mobile-menu a{font-size:18px;padding:13px 5px}
+.site-header .mobile-menu a:last-child{border-bottom:0}
+/* The header is fixed, so reserve its former place without moving the hero below it. */
+html{scroll-padding-top:106px}
+.hero{padding-top:190px}
+@media(max-width:1100px){
+  .site-header{width:calc(100% - 36px)}
+  .site-header.is-condensed{width:calc(100% - 36px)}
+  .site-header .nav-desktop{display:none}
+  .site-header .menu-toggle{display:grid}
+  .site-header .nav-actions{gap:4px}
+}
+@media(max-width:1000px){.site-header .wa-header{display:none}}
+@media(max-width:700px){
+  .site-header,.site-header.is-condensed{top:calc(10px + env(safe-area-inset-top,0px));width:calc(100% - 24px)}
+  .site-header .nav-container,.site-header.is-condensed .nav-container{height:62px;padding:0 11px 0 19px;gap:8px}
+  .site-header .brand{min-width:0}
+  .site-header .brand strong{font-size:21px}
+  .site-header .brand span{font-size:8px}
+  .site-header .nav-cta{display:none}
+  .site-header .nav-actions{gap:1px}
+  .site-header .icon-button{width:39px;height:39px}
+  .site-header .mobile-menu{top:calc(100% + 8px);padding:9px 21px 15px;max-height:calc(100dvh - 95px);border-radius:23px}
+  html{scroll-padding-top:88px}
+  .hero{padding-top:133px}
+}
+@media(max-width:365px){.site-header .nav-container,.site-header.is-condensed .nav-container{padding-left:15px;padding-right:8px}}
+@media(prefers-reduced-motion:reduce){.site-header,.site-header .nav-container,.site-header .nav-desktop a{transition:none!important}}
+@supports not (backdrop-filter:blur(1px)){
+  .site-header .nav-container,.site-header .mobile-menu{background:var(--bg)}
+}
