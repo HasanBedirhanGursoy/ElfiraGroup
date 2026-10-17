@@ -1,0 +1,157 @@
+/* ELFIRA GROUP — V6 / Apple-inspired interfaces, independent studio expression */
+:root {
+  --bg:#ffffff;--canvas:#f9f9fb;--soft:#f4f4f6;--card:#fff;
+  --ink:#16161b;--muted:#777782;--line:#e8e8ed;
+  --accent:#9764dc;--accent-pink:#ea86bb;
+  --radius:28px;--content:1200px;--max-container:1400px;
+}
+body.dark{--bg:#101014;--canvas:#17171c;--soft:#1e1e25;--card:#1a1a20;--ink:#f7f7f9;--muted:#abaab4;--line:#303038}
+::selection{background:#e2cafa;color:#151117}
+.site-header{background:color-mix(in srgb,var(--bg) 83%,transparent);border-bottom:1px solid color-mix(in srgb,var(--line) 80%,transparent)}
+.nav-container{height:76px}
+.brand strong{font-size:26px;font-weight:780;letter-spacing:-.071em}.brand span{font-size:9px;letter-spacing:.47em;font-weight:750;margin-top:3px}
+.nav-desktop{gap:34px;font-size:13px}.nav-desktop a{transition:color .2s}.nav-desktop a:hover{color:#a46cdf}
+.nav-cta{padding:0 20px;height:42px;font-size:12.5px}
+.nav-cta:hover{background:#38323e}
+.hero{padding-top:104px;padding-bottom:110px;position:relative}
+.hero:before{content:'';pointer-events:none;position:absolute;z-index:-1;right:-12%;top:10%;width:64%;height:600px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(238,211,249,.27),rgba(250,232,248,.12) 45%,transparent 72%);filter:blur(35px)}
+body.dark .hero:before{background:radial-gradient(ellipse at center,rgba(146,86,177,.16),transparent 70%)}
+.hero-text{max-width:none}
+.subtle-kicker{display:flex;align-items:center;gap:10px;margin-bottom:31px;font-size:10px;letter-spacing:.17em;color:var(--muted)}
+.live-point{width:7px;height:7px;border-radius:50%;background:#b487e6;box-shadow:0 0 0 4px rgba(180,135,230,.12)}
+.hero-kicker-side{opacity:.52;letter-spacing:.16em}
+.hero h1{font-size:clamp(78px,9.6vw,144px);letter-spacing:-.085em;line-height:.94;font-weight:780}
+.gradient-title{background:linear-gradient(95deg,#8461e3 0%,#aa70e3 40%,#d379cb 65%,#f197b6 100%);-webkit-background-clip:text;background-clip:text}
+.hero-text>p{font-size:clamp(19px,2vw,24px);max-width:650px;color:var(--muted);font-weight:420;line-height:1.48;margin:38px 0 29px;letter-spacing:-.025em}
+.hero-actions{gap:33px}
+.hero .button-dark{min-height:55px;padding:0 26px;box-shadow:0 9px 33px rgba(117,61,135,.14)}
+.text-link{font-size:14px;color:var(--ink);border-bottom:1px solid #c8c6cb}
+.hero-note{display:flex;align-items:center;gap:12px;margin-top:45px;color:#a6a3b1;font-size:11px;letter-spacing:.015em}
+.note-line{display:block;height:1px;width:35px;background:linear-gradient(90deg,#9568db,#eda2be)}
+.showcase-shell{margin-top:56px;padding:24px 24px 12px;background:linear-gradient(150deg,#faf9fc 0%,#f3f1f7 100%);border:1px solid #eae7ef;border-radius:37px;box-shadow:0 34px 105px rgba(24,22,41,.09),inset 0 1px 0 #fff}
+body.dark .showcase-shell{background:linear-gradient(150deg,#25222d,#1d1c23);border-color:#3d3945;box-shadow:0 30px 80px #0005}
+.browser-window{border:1px solid #e4e2e7;border-radius:19px;box-shadow:0 16px 40px rgba(37,32,47,.075);background:#f8f7f7}
+.browser-bar{height:48px;background:#fbfafc;border-bottom:1px solid #e9e6eb}
+.browser-address{font-size:10px;font-weight:600;letter-spacing:.08em;background:#f1f0f3;color:#888692}
+.atelier-page{height:470px;background:#f6f3ee}
+.atelier-nav{height:76px}
+.atelier-art{border-top-left-radius:175px}
+.showcase-slide[hidden]{display:none!important}
+.showcase-caption{align-items:center;margin:19px 2px 2px;gap:20px;color:#777482;letter-spacing:normal}
+.showcase-caption-copy{display:flex;flex-direction:column;gap:6px;min-width:0}
+.showcase-caption-copy>span{font-size:9px;letter-spacing:.16em;font-weight:750;color:#898494}
+.showcase-caption-copy>strong{font-size:14px;letter-spacing:-.02em;color:#44424c;font-weight:650}
+body.dark .showcase-caption-copy>strong{color:#e7e3ec}
+.showcase-controls{display:flex;align-items:center;gap:8px}
+.showcase-controls>span{font-size:12px;font-weight:780;color:#46434b;min-width:75px;white-space:nowrap;margin-right:6px}
+body.dark .showcase-controls>span{color:#eee}
+.showcase-controls i{font-style:normal;color:#a3a0ac;font-weight:500}
+.showcase-controls button{height:36px;width:36px;display:grid;place-items:center;border:1px solid #dedce3;background:white;color:#17171b;border-radius:50%;font-size:17px;transition:transform .2s,background .2s}
+.showcase-controls button:hover{background:#e9e2f4;transform:translateY(-2px)}
+/* Second showcase view: clearly marked conceptual project presentation */
+.ekinciler-site{background:#f6f2e8;color:#171e17;height:470px;display:flex;flex-direction:column;overflow:hidden}
+.ekin-site-nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 35px}
+.ekin-wordmark{display:flex;align-items:center;gap:8px;font-size:13px;line-height:1.12;font-weight:800;letter-spacing:.02em}.ekin-symbol{display:grid;place-items:center;border:1px solid #586c52;border-radius:50%;height:40px;width:40px;font-size:20px;font-weight:600;font-family:Georgia,serif}.ekin-wordmark small{display:block;font-size:8px;letter-spacing:.22em;font-weight:700;margin-top:4px}
+.ekin-navlinks{font-size:11px;color:#5e6759}.ekin-site-pill{background:#203428;border-radius:50px;color:white;font-size:11px;padding:13px 17px;white-space:nowrap}
+.ekin-hero{display:grid;grid-template-columns:50% 50%;flex:1;overflow:hidden}.ekin-copy{padding:35px 14px 36px 55px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.ekin-copy>span:first-child{font-size:10px;letter-spacing:.18em;color:#78836e;font-weight:600}.ekin-copy h2{font:400 clamp(50px,6vw,80px)/1.02 Georgia,serif;letter-spacing:-.065em;margin:27px 0 20px}.ekin-copy h2 em{color:#7e886f;font-weight:400}.ekin-copy p{max-width:290px;font-size:14px;line-height:1.6;color:#7a8173;margin:0 0 23px}.ekin-button{display:inline-flex;align-items:center;gap:34px;border-bottom:1px solid #8a9286;padding-bottom:9px;font-size:12px;font-weight:700}.ekin-art{position:relative;overflow:hidden;background:linear-gradient(#dfddcc,#a4af91);border-top-left-radius:175px}.ekin-sun{position:absolute;top:18%;right:15%;width:110px;height:110px;border-radius:50%;background:rgba(255,245,211,.62);filter:blur(2px)}.ekin-hills{position:absolute;left:-20%;bottom:-18%;width:150%;height:68%;border-radius:48% 55% 0 0;transform:rotate(-7deg)}.hill-back{bottom:-10%;left:-5%;background:#829473;transform:rotate(-14deg)}.hill-front{bottom:-45%;left:-25%;height:100%;background:linear-gradient(150deg,#596c4e,#273e32);transform:rotate(11deg)}.ekin-art-label{position:absolute;bottom:21px;left:20px;color:#e0e9d8;font-size:10px;letter-spacing:.12em}
+/* Calm editorial philosophy */
+.intro-statement{padding:104px 0 134px;text-align:left;border-bottom:1px solid var(--line)}
+.section-index{display:inline-block;color:#bc89c9;margin-right:15px;font-weight:800}
+.philosophy-layout{margin-top:30px;display:grid;grid-template-columns:1.25fr .75fr;gap:80px;align-items:end}
+.philosophy-layout h2{margin:0;font-size:clamp(43px,6.6vw,82px);font-weight:700;line-height:1.04;letter-spacing:-.073em}
+.philosophy-layout h2 em{display:inline-block;max-width:800px;background:linear-gradient(100deg,#5f5a6c,#a179ad 54%,#d998ba);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;font-style:normal}
+.philosophy-copy{padding-bottom:5px;display:flex;flex-direction:column;align-items:flex-start;gap:17px}
+.philosophy-copy p{font-size:16px;line-height:1.75;letter-spacing:-.012em;color:var(--muted);margin:0}
+.tiny-rule{width:43px;height:2px;border-radius:3px;background:linear-gradient(90deg,#8261db,#ea8fba)}
+.philosophy-copy .text-link{font-size:13px}
+/* better services */
+.services,.pricing-section,.steps-section,.faq-section{padding-top:112px;padding-bottom:120px}
+.section-heading h2{font-weight:690;line-height:1.07;font-size:clamp(46px,5.5vw,69px)}
+.section-heading>p{color:var(--muted);font-size:15px}
+.service-grid{gap:18px}
+.service-card{border-radius:26px;background:var(--canvas);border:1px solid var(--line);box-shadow:none;min-height:500px}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(44,34,66,.07)}
+.service-number{font-size:12px;letter-spacing:.04em;color:#96919f;padding:27px 29px 0}
+.service-graphic{height:224px;margin:10px 21px 6px;border-radius:19px;background:radial-gradient(circle at 55% 45%,#faf7fc,#f0edf6)}
+.service-bottom{padding:24px 29px 31px}
+.service-bottom h3{font-size:26px;font-weight:650;letter-spacing:-.055em}
+.service-bottom p{font-size:14px;line-height:1.65;color:var(--muted)}
+/* Grand, authentic studio portfolio stage */
+.work-section{background:#111116;color:#f6f5fa;padding:125px 0 115px;position:relative;overflow:hidden}
+.work-section:before{content:'';width:680px;height:500px;position:absolute;right:-180px;top:-250px;border-radius:50%;background:radial-gradient(circle,#8d4d9d33,transparent 70%);pointer-events:none}
+.work-head{display:flex;align-items:end;justify-content:space-between;gap:70px;margin-bottom:52px;position:relative}
+.work-head .eyebrow{color:#a9a6b6}
+.work-head h2{font-size:clamp(55px,7vw,88px);line-height:1.03;letter-spacing:-.075em;margin:24px 0 0;font-weight:710}
+.work-head h2 em{font-style:normal;color:#b5a3c1;font-weight:530}
+.work-head>p{max-width:305px;font-size:14px;line-height:1.75;color:#a6a4ae;letter-spacing:-.01em;margin:0 0 9px}
+.portfolio-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:24px;align-items:start}
+.portfolio-primary,.portfolio-secondary{min-width:0}
+.portfolio-poster{border-radius:24px;position:relative;overflow:hidden;isolation:isolate}
+.poster-eki{min-height:525px;padding:33px 37px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(ellipse at 83% 35%,#6e8068 0,#324a40 37%,#192b27 75%);color:#f5f5e9}
+.poster-eki:before{content:'';position:absolute;right:-130px;top:-160px;width:520px;height:650px;border:1px solid rgba(235,242,222,.2);border-radius:50%;transform:rotate(18deg);pointer-events:none}
+.poster-eki:after{content:'';position:absolute;right:-170px;top:-130px;width:610px;height:710px;border:1px solid rgba(235,242,222,.13);border-radius:50%;transform:rotate(18deg);pointer-events:none}
+.poster-top,.poster-bottom{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:10px;font-weight:690;letter-spacing:.11em;color:#d6ded3}
+.eki-center{position:relative;z-index:1;margin:auto 0;padding:35px 0 25px}.eki-center small{font-size:10px;letter-spacing:.19em;color:#b7c7b6;font-weight:700}
+.eki-center strong{display:block;font:400 clamp(48px,6.2vw,83px)/.99 Georgia,'Times New Roman',serif;letter-spacing:-.07em;margin:24px 0 22px}
+.eki-center strong em{color:#c7d0b7;font-style:italic;font-weight:400}
+.eki-center .eki-rule{height:1px;width:70px;display:block;background:#a7b4a3;margin-bottom:20px}
+.eki-center p{font-size:15px;letter-spacing:.19em;font-weight:700;line-height:1.35;margin:0}
+.poster-round{width:40px;height:40px;display:grid;place-items:center;border:1px solid #ccd6c666;border-radius:50%;font-size:21px;letter-spacing:normal;font-weight:400}
+.poster-atelier{height:425px;padding:16px;background:#e8dfd4;color:#332c27}
+.atelier-small-visual{height:100%;border-radius:17px;background:#f5f0e8;position:relative;overflow:hidden;padding:33px}
+.atelier-small-visual>span{font:32px Georgia,serif;letter-spacing:-.07em}
+.atelier-small-visual>strong{display:block;position:relative;z-index:2;font:400 clamp(35px,3.2vw,49px)/1.08 Georgia,serif;letter-spacing:-.065em;margin-top:64px}.atelier-small-visual>strong em{font-weight:400;color:#a18578}
+.atelier-mini-art{position:absolute;bottom:-42px;right:-85px;width:72%;height:75%;border-top-left-radius:200px;background:url('atelier-interior.webp') center / cover no-repeat;filter:saturate(.74)}
+.concept-tag{position:absolute;bottom:27px;left:32px;background:rgba(255,255,255,.86);border:1px solid #ffffffaa;color:#49403b;font-weight:750;letter-spacing:.14em;font-size:9px;padding:10px 15px;border-radius:20px;z-index:3}
+.project-meta{display:flex;justify-content:space-between;gap:14px;align-items:end;padding:25px 4px 2px}
+.project-meta>div>span{font-size:9px;color:#918c9b;letter-spacing:.14em;font-weight:740}
+.project-meta h3{font-size:22px;letter-spacing:-.035em;font-weight:630;margin:10px 0 6px}
+.project-meta p{font-size:12px;color:#aaa6b3;margin:0}
+.project-tag{font-size:9px;white-space:nowrap;letter-spacing:.09em;color:#a9a6b1;border:1px solid #4d4b54;border-radius:99px;padding:10px 12px}
+.work-disclaimer{color:#85818f;font-size:11px;line-height:1.7;margin:30px 0 0}
+/* plans, process & estimator */
+.pricing-section{background:var(--bg)}
+.price-card{background:var(--canvas);border-radius:24px;box-shadow:none;transition:transform .2s}
+.price-card:hover{transform:translateY(-3px)}
+.price-card.featured{border:1px solid #d6b6e7;background:linear-gradient(145deg,#f9f4fc,#faf9fc)}
+body.dark .price-card.featured{background:#27212c;border-color:#654a70}
+.steps-section{border-top:1px solid var(--line)}
+.estimate-section{background:var(--canvas)}
+.estimator{box-shadow:0 24px 70px rgba(23,20,33,.05)}
+.estimate-summary{background:#1a1821}
+.closing{background:#18161d;position:relative;overflow:hidden}
+.closing:before{content:'';position:absolute;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,#9352aa33,transparent 70%);top:-240px;right:-120px}
+.closing-content{position:relative;z-index:1}
+.closing h2 em{background:linear-gradient(100deg,#ac8ff2,#e8a1c1);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+/* Narrow layouts */
+@media(max-width:990px){.hero h1{font-size:clamp(76px,10vw,105px)}.philosophy-layout{gap:30px}.portfolio-grid{grid-template-columns:1.15fr 1fr}.poster-eki{min-height:455px}.poster-atelier{height:360px}.project-tag{display:none}.ekin-copy h2{font-size:55px}.atelier-page{height:390px}.ekinciler-site{height:390px}}
+@media(max-width:700px){
+.nav-container{height:68px;padding:0 22px}.brand strong{font-size:22px}.brand span{font-size:9px}
+.hero{padding-top:54px;padding-bottom:68px}
+.hero:before{right:-70%;top:-5%;width:140%;height:580px;filter:blur(50px)}
+.subtle-kicker{font-size:8.6px;letter-spacing:.11em;margin-bottom:27px;gap:9px;white-space:normal}.hero-kicker-side{display:none}.live-point{width:6px;height:6px;flex-shrink:0}
+.hero h1{font-size:clamp(49px,13.8vw,77px);line-height:1.01;letter-spacing:-.081em}
+.hero-text>p{font-size:16px;line-height:1.62;letter-spacing:-.012em;margin:27px 0 26px;max-width:355px}
+.hero-actions{gap:14px}.hero .button-dark{min-height:48px;padding:0 18px;font-size:12px}.hero .text-link{font-size:12px}
+.hero-note{margin-top:27px;font-size:10px;gap:9px}.note-line{width:22px}
+.showcase-shell{margin-top:40px;padding:9px 9px 12px;border-radius:24px;box-shadow:0 24px 65px #18132415}
+.browser-window{border-radius:17px}.browser-bar{height:32px;padding:0 10px}
+.atelier-page,.ekinciler-site{height:239px}
+.atelier-nav{height:44px}.atelier-copy h2{font-size:clamp(23px,6vw,39px)}
+.ekin-site-nav{height:43px;padding:0 12px;gap:5px}.ekin-symbol{width:23px;height:23px;font-size:12px}.ekin-wordmark{font-size:8px;gap:5px}.ekin-wordmark small{font-size:5px;margin-top:2px}.ekin-navlinks{display:none}.ekin-site-pill{font-size:7px;padding:7px 10px}.ekin-hero{grid-template-columns:51% 49%}.ekin-copy{padding:10px 5px 12px 14px}.ekin-copy>span:first-child{font-size:5.5px;letter-spacing:.08em}.ekin-copy h2{font-size:clamp(22px,5.9vw,35px);letter-spacing:-.075em;margin:13px 0 11px}.ekin-copy p{font-size:8px;line-height:1.45;margin-bottom:12px}.ekin-button{font-size:8px;gap:8px;padding-bottom:5px}.ekin-art{border-top-left-radius:90px}.ekin-sun{height:50px;width:50px}.ekin-art-label{font-size:5px;bottom:10px;left:8px}
+.showcase-caption{margin:12px 4px 0;gap:6px}.showcase-caption-copy{gap:4px}.showcase-caption-copy>span{font-size:7px;letter-spacing:.07em}.showcase-caption-copy>strong{font-size:10.5px;max-width:205px;line-height:1.35}.showcase-controls{gap:5px}.showcase-controls>span{font-size:9px;min-width:auto;margin:0 3px 0 0}.showcase-controls button{width:29px;height:29px;font-size:14px}
+.intro-statement{padding:61px 0 69px}.philosophy-layout{display:block;margin-top:22px}.philosophy-layout h2{font-size:clamp(36px,9vw,54px);line-height:1.13}.philosophy-copy{margin-top:25px;gap:14px}.philosophy-copy p{font-size:14px;line-height:1.65}.philosophy-copy .text-link{font-size:12px}
+.services,.pricing-section,.steps-section,.faq-section{padding-top:79px;padding-bottom:83px}.section-heading h2{font-size:clamp(38px,9.2vw,55px)}
+.service-card{min-height:auto}.service-graphic{height:190px}.service-bottom h3{font-size:24px}
+.work-section{padding:77px 0 78px}.work-head{display:block;margin-bottom:31px}.work-head h2{font-size:clamp(47px,11vw,63px)}.work-head>p{font-size:13px;max-width:330px;margin-top:23px}
+.portfolio-grid{grid-template-columns:1fr;gap:29px}.poster-eki{min-height:435px;padding:24px 24px}.eki-center{padding:30px 0}.eki-center strong{font-size:clamp(52px,13vw,78px)}.eki-center small{font-size:8.5px}.poster-top,.poster-bottom{font-size:8px}.poster-atelier{height:395px}.atelier-small-visual{padding:24px}.atelier-small-visual>strong{font-size:45px}.project-meta h3{font-size:20px}.project-tag{display:none}.work-disclaimer{font-size:11px;margin-top:23px}
+.pricing-grid{gap:15px}
+.closing h2{font-size:43px}
+}
+@media(max-width:365px){.hero h1{font-size:48px}.hero-actions{gap:10px}.hero .button-dark{padding:0 13px;font-size:11px}.hero .text-link{font-size:10px}.showcase-caption-copy>strong{max-width:160px}.ekinciler-site{height:225px}.atelier-page{height:225px}}
+@media(prefers-reduced-motion:reduce){.hero:before{filter:none}}
+/* keep ambient glow inside the viewport without a horizontal scroll bar */
+.hero:before{right:0;width:62%}
+@media(max-width:700px){.hero:before{right:0;width:100%}}
+
+.poster-round{background:transparent;color:#f3f5ee;cursor:pointer;transition:background .2s,transform .2s}.poster-round:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}

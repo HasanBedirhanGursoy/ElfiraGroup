@@ -1,0 +1,24 @@
+/* WhatsApp contact points — matched to ELFIRA's Apple-inspired aesthetic. */
+.wa-link .whatsapp-symbol{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.wa-header{display:inline-flex;gap:7px;align-items:center;font-size:12px;font-weight:650;padding:9px 12px;border-radius:99px;border:1px solid var(--line);white-space:nowrap;transition:background .15s}
+.wa-header:hover{background:var(--soft)}
+.button-wa{background:#1a6e48!important;color:white!important;display:flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent!important;border-radius:99px;font-weight:650;text-align:center;line-height:1.3;transition:background .18s,transform .18s}
+.button-wa:hover{background:#14583a!important;transform:translateY(-1px)}
+.button-wa svg:last-child:not(.whatsapp-symbol){margin-left:auto}
+.estimate-summary .button-wa{margin:15px 0 10px;min-height:51px;max-width:100%}
+.dialog-wa{min-height:50px;margin-top:16px;width:100%}
+.client-info legend span{font-size:.8em;color:var(--muted);font-weight:500}
+.contact-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-fields label{font-size:12px;font-weight:650;color:var(--ink);display:flex;flex-direction:column;gap:8px}
+.contact-fields input,.contact-fields textarea{width:100%;min-width:0;padding:13px 14px;border-radius:14px;border:1px solid var(--line);color:var(--ink);background:var(--bg);font-size:13px;font-weight:400;outline-offset:2px}
+.contact-fields textarea{resize:vertical;line-height:1.45}
+.contact-fields input::placeholder,.contact-fields textarea::placeholder{color:var(--muted);opacity:.85}
+.contact-fields-wide{grid-column:1/-1}
+.wa-float{position:fixed;right:24px;bottom:calc(24px + env(safe-area-inset-bottom, 0px));z-index:28;display:inline-flex;align-items:center;gap:9px;min-height:52px;padding:0 17px;border-radius:999px;background:var(--ink);color:var(--bg);border:1px solid color-mix(in srgb,var(--bg) 12%,transparent);box-shadow:0 10px 35px #0003;font-weight:700;font-size:12px;transition:transform .18s,box-shadow .18s}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 14px 40px #0004}
+.wa-float .whatsapp-symbol{width:22px;height:22px}
+.closing-wa{display:inline-flex;align-items:center;gap:9px;margin:13px 0 0 18px;color:inherit;font-size:14px;font-weight:650;min-height:45px}
+.closing-wa svg{height:16px;width:16px}
+@media(max-width:1000px){.wa-header{display:none}}
+@media(max-width:700px){.contact-fields{grid-template-columns:1fr;gap:13px}.wa-float{right:17px;bottom:calc(17px + env(safe-area-inset-bottom, 0px));min-height:49px;padding:0 14px;font-size:12px}.closing-wa{margin:12px 0 0}}
+@media(prefers-reduced-motion:reduce){.wa-float,.button-wa{transition:none}}
