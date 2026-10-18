@@ -155,3 +155,6 @@ body.dark .price-card.featured{background:#27212c;border-color:#654a70}
 @media(max-width:700px){.hero:before{right:0;width:100%}}
 
 .poster-round{background:transparent;color:#f3f5ee;cursor:pointer;transition:background .2s,transform .2s}.poster-round:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+/* Alternate email enquiry alongside the WhatsApp estimate action */
+.estimate-summary .email-quote-link{display:inline-flex;align-items:center;justify-content:center;margin:13px 0 10px;min-height:30px;text-align:center;color:#fff;font-weight:600;font-size:13px;text-decoration:underline;text-underline-offset:4px}
+.estimate-summary .email-quote-link:hover{color:#e5d8f4}

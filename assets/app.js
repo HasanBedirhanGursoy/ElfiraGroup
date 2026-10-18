@@ -137,6 +137,12 @@
    return ['ELFIRA GROUP — PROJECT SUMMARY','',...parts,'','Contact name: '+($('#customer-name')?.value.trim()||'Not provided'),'Business / brand: '+($('#brand-name')?.value.trim()||'Not provided'),'Project goals: '+($('#project-note')?.value.trim()||'Not provided'),'','USD amounts are indicative conversions based on 1 USD = 49.5141 TRY (18 October 2026). Final scope, currency and price require a written agreement.','This summary was generated on your device. No enquiry has been sent automatically.'].join('\n');
  }
 
+ const emailQuote=$('#email-estimate');
+ if(emailQuote)emailQuote.addEventListener('click',()=>{
+   const subject=isEn?'Project enquiry — ELFIRA Group':'Proje teklif talebi — ELFIRA Group';
+   const brief=isEn?buildBriefEn():buildBrief();
+   emailQuote.href='mailto:info@elfiragroup.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(brief);
+ });
  $('#generate-brief').addEventListener('click',()=>{$('#brief-text').value=isEn?buildBriefEn():buildBrief();dialog.showModal()});
  $('#close-dialog').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
