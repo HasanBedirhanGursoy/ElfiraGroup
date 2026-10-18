@@ -20,8 +20,10 @@ V8 temel alınarak Apple tarzı premium kurumsal site güncellendi.
 - Üçüncü taraf platformların hesap/abonelik bedelleri hariçtir.
 - Ekinciler çalışması ve Atelier konsepti birbirinden ayrılmıştır.
 - Müşteri giriş paneli, admin paneli, kalıcı CRM, sunucu üzerinde teklif kayıtları ve otomatik WhatsApp mesaj gönderimi yoktur. Bunlar backend, gerçek hesap doğrulama, güvenlik, KVKK ve barındırma planı gerektirir.
-- Tasarım Türkçedir; gelecekte İngilizce içerik ayrıca hazırlanabilir.
+- Türkçe ana sayfa `/`, İngilizce sayfa `/en/` adresindedir. Her iki sayfada erişilebilir TR/EN dil seçimi vardır.
+- İngilizce sayfadaki USD tutarları 18.10.2026 tarihli referans kur (1 USD = 49.5141 TRY) üzerinden yaklaşık dönüştürülmüştür; bağlayıcı USD teklifleri değildir. Ücretler gerçek kur, kapsam, vergi ve ödeme koşullarına göre yazılı teklif ile kesinleşir.
+- İngilizce tahmin hesaplayıcısı, proje özeti ve WhatsApp teklif taslakları USD üzerinden çalışır. Ödeme/abonelik sistemi eklenmemiştir.
 
 ## Dosyalar
 
-`index.html` + `assets/` (CSS/JS ve yerel görseller).
+`index.html` + `en/index.html` + `assets/` (CSS/JS ve yerel görseller).

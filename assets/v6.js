@@ -7,6 +7,10 @@
   {type:'KONSEPT ÇALIŞMASI / ATELIER',title:'Dijitalde ilk izlenim, özenle tasarlanır.'},
   {type:'WEB GELİŞTİRME / EKİNCİLER',title:'Kurumsal kimliğe yakışan dijital sunum.'}
  ];
+ if(document.documentElement.lang==='en'){
+   descriptors[0]={type:'DESIGN CONCEPT / ATELIER',title:'A thoughtfully designed first impression online.'};
+   descriptors[1]={type:'WEB DEVELOPMENT / EKİNCİLER',title:'A digital presentation that reflects the brand.'};
+ }
  let index=0;
  function show(n){
   index=(n+slides.length)%slides.length;
