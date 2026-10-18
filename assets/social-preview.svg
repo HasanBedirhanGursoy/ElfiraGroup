@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">ELFIRA Group</title><desc id="d">Web design, e-commerce and custom software</desc>
+<rect width="1200" height="630" fill="#101116"/>
+<rect x="58" y="48" width="1084" height="534" fill="none" stroke="#32343c" stroke-width="2"/>
+<rect x="840" y="145" width="250" height="250" rx="40" stroke="#78527f" stroke-width="3" fill="none"/>
+<rect x="890" y="195" width="150" height="150" rx="31" stroke="#c38db9" stroke-width="3" fill="none"/>
+<circle cx="965" cy="270" r="28" fill="none" stroke="#c38db9" stroke-width="3"/>
+<text x="96" y="205" fill="#f7f5fa" font-family="Arial,Helvetica,sans-serif" font-size="105" font-weight="700" letter-spacing="-5">ELFIRA</text>
+<text x="103" y="258" fill="#c39bce" font-family="Arial,Helvetica,sans-serif" font-size="29" letter-spacing="12">GROUP</text>
+<path d="M100 306H645" stroke="#78527f" stroke-width="4"/>
+<text x="102" y="390" fill="#f0edf4" font-family="Arial,Helvetica,sans-serif" font-weight="300" font-size="36" letter-spacing="2">DESIGN. TECHNOLOGY.</text>
+<text x="102" y="445" fill="#f0edf4" font-family="Arial,Helvetica,sans-serif" font-weight="300" font-size="36" letter-spacing="2">DIGITAL EXPERIENCES.</text>
+<text x="102" y="545" fill="#b4abbc" font-family="Arial,Helvetica,sans-serif" font-size="20" letter-spacing="2">ELFIRAGROUP.COM</text>
+</svg>
