@@ -1,0 +1,7 @@
+/* Compact language switch for the floating dock; stays visible on mobile. */
+.site-header .language-switch{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid var(--dock-border);border-radius:99px;background:var(--dock-hover);flex:none;white-space:nowrap}
+.site-header .language-switch a{display:inline-flex;align-items:center;justify-content:center;min-width:30px;min-height:29px;padding:3px 5px;border-radius:99px;font-size:10px;font-weight:700;letter-spacing:.02em;color:var(--muted)}
+.site-header .language-switch a.active{background:var(--ink);color:var(--bg)}
+.site-header .language-switch a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media(max-width:700px){.site-header .language-switch{padding:2px}.site-header .language-switch a{min-width:27px;min-height:27px;font-size:10px}}
+@media(max-width:365px){.site-header .language-switch a{min-width:25px;padding:2px 4px}.site-header .nav-actions{gap:0}}
