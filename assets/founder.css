@@ -1,0 +1,23 @@
+/* Founder profile: keeps ELFIRA's editorial system; independent of homepage JS. */
+.founder-page{min-height:100vh;background:var(--bg);color:var(--ink)}
+.founder-top{padding:115px 0 86px;border-bottom:1px solid var(--line)}
+.founder-kicker{display:block;font-size:11px;font-weight:750;color:var(--muted);letter-spacing:.2em;text-transform:uppercase;margin-bottom:28px}
+.founder-top h1{font-size:clamp(68px,10vw,142px);line-height:.96;letter-spacing:-.085em;margin:0 0 26px;font-weight:760}
+.founder-role{font-size:clamp(18px,2.2vw,25px);color:var(--muted);letter-spacing:-.02em;margin:0 0 34px}
+.founder-lead{font-size:clamp(23px,3vw,38px);font-weight:580;line-height:1.35;letter-spacing:-.04em;max-width:930px;margin:0 0 26px}
+.founder-intro{max-width:780px;color:var(--muted);font-size:17px;line-height:1.85;margin:0}
+.founder-section{padding:76px 0;border-bottom:1px solid var(--line)}
+.founder-section h2{font-size:clamp(35px,4.5vw,58px);letter-spacing:-.065em;font-weight:680;margin:0 0 26px}
+.founder-areas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.founder-areas li{border:1px solid var(--line);border-radius:18px;background:var(--canvas);padding:23px 25px;font-size:17px;font-weight:550}
+.founder-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.founder-projects article{min-height:255px;display:flex;flex-direction:column;border:1px solid var(--line);background:var(--canvas);border-radius:22px;padding:28px}
+.founder-projects h3{font-size:23px;letter-spacing:-.04em;margin:0 0 12px}
+.founder-projects p{color:var(--muted);line-height:1.65;margin:0 0 22px;font-size:15px}
+.founder-projects a{font-weight:650;font-size:14px;margin-top:auto;text-decoration:underline;text-underline-offset:5px}
+.founder-minor{color:var(--muted);font-size:14px;line-height:1.7;max-width:820px}
+.founder-contact a{display:inline-block;margin-top:13px;padding:16px 25px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:650}
+.founder-links{display:flex;gap:22px;align-items:center;font-size:14px}
+.founder-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.founder-footer{padding:35px 0 50px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px}
+@media(max-width:750px){.founder-top{padding:82px 0 65px}.founder-areas,.founder-projects{grid-template-columns:1fr}.founder-section{padding:54px 0}.founder-footer{flex-direction:column}.founder-links{gap:12px}.founder-top h1{font-size:clamp(60px,14vw,90px)}}
