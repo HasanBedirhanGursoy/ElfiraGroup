@@ -21,3 +21,9 @@
 .founder-links a:hover{text-decoration:underline;text-underline-offset:4px}
 .founder-footer{padding:35px 0 50px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px}
 @media(max-width:750px){.founder-top{padding:82px 0 65px}.founder-areas,.founder-projects{grid-template-columns:1fr}.founder-section{padding:54px 0}.founder-footer{flex-direction:column}.founder-links{gap:12px}.founder-top h1{font-size:clamp(60px,14vw,90px)}}
+
+/* Quiet editorial founder reference on the homepages. */
+.founder-teaser{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;padding-top:82px;padding-bottom:85px;border-top:1px solid var(--line)}
+.founder-teaser h2{font-size:clamp(46px,6vw,78px);font-weight:710;letter-spacing:-.07em;line-height:1.07;margin:19px 0 0}
+.founder-teaser p{font-size:17px;line-height:1.7;color:var(--muted);max-width:480px;margin:0 0 20px}
+@media(max-width:750px){.founder-teaser{grid-template-columns:1fr;gap:24px;padding-top:60px;padding-bottom:65px}}
